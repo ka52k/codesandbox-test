@@ -22,16 +22,54 @@
 // console.log(val3);  // const変数は、上書き、再宣言はできない。但し、下記のような例外があるので注意。
 
 // constで定義したオブジェクトはプロパティの変更が可能。
-const val4 = {
-  name: "圭一",
+// const val4 = {
+//   name: "圭一",
+//   age: 52
+// };
+// val4.name = "keiichi"; // constで定義しているが、このように中身の値を変更することが出来るので注意。
+// val4.address = "Tokyo"; // このような追加も可能。
+// console.log(val4);
+
+// // constで定義した配列はプロパティの変更が可能。
+// const val5 = ["dog", "cat"];
+// val5[0] = "bird";
+// val5.push("monkey");
+// console.log(val5);
+
+// テンプレート文字列について
+// const name = "keiichi";
+// const age = 52;
+
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";  // 従来の書き方
+
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;  // テンプレート文字列
+
+// console.log(message1);
+// console.log(message2);
+
+// アロー関数について
+// function func1(str) {
+//   return str;
+// };   // 従来の関数の書き方1
+// console.log(func1("func1です"));
+
+// const func2 = function(str) {
+// return str;
+// };   // 従来の関数の書き方2
+// console.log(func2("func2です"));
+
+// const func3 = (str) => {
+//   return str;
+// };  // アロー関数。今回は引数が一つなので、引数の()を省略出来る。また{}内の処理が1行なので{return}の省略もできる。但し、{}を書いたときは、returnだけ省略することは出来ない。
+// console.log(func3("func3です"));
+
+// const func4 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log(func4(1, 3));
+
+// 分割代入
+const myProfile = {
+  name: "keiichi",
   age: 52
 };
-val4.name = "keiichi"; // constで定義しているが、このように中身の値を変更することが出来るので注意。
-val4.address = "Tokyo"; // このような追加も可能。
-console.log(val4);
-
-// constで定義した配列はプロパティの変更が可能。
-const val5 = ['dog','cat'];
-val5[0] = "bird";
-val5.push('monkey');
-console.log(val5);
