@@ -68,8 +68,26 @@
 // };
 // console.log(func4(1, 3));
 
+
 // 分割代入
-const myProfile = {
-  name: "keiichi",
-  age: 52
-};
+// const myProfile = {
+//   name: "keiichi",
+//   age: 52
+// };
+
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}です。`;
+// console.log(message1);
+
+// const { name, age } = myProfile;
+// const message2 = `名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+const myProfile = ['keiichi', 52];
+const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}です。`;
+console.log(message3);
+
+
+
+
+
+
