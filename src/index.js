@@ -42,7 +42,7 @@
 
 // const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";  // 従来の書き方
 
-// const message2 = `私の名前は${name}です。年齢は${age}です。`;  // テンプレート文字列
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;  // テンプレート文字列（`(バッククォート)と${}を使う。）
 
 // console.log(message1);
 // console.log(message2);
@@ -69,6 +69,7 @@
 // console.log(func4(1, 3));
 
 // 分割代入
+// オブジェクトの場合
 // const myProfile = {
 //   name: "keiichi",
 //   age: 52
@@ -81,6 +82,7 @@
 // const message2 = `名前は${name}です。年齢は${age}です。`;
 // console.log(message2);
 
+// 配列の場合
 // const myProfile = ['keiichi', 52];
 // const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}です。`;
 // console.log(message3);
@@ -188,6 +190,6 @@
 // const fee = num || "金額未設定です";
 // console.log(fee);
 
-const num2 = 100;
-const fee2 = num2 && "何か設定されました";  // &&は左側がtrueなら右側を返す。
-console.log(fee2);
+// const num2 = 100;
+// const fee2 = num2 && "何か設定されました";  // &&は左側がtrueなら右側を返す。
+// console.log(fee2);
